@@ -672,13 +672,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bfb6641875cc4e159a43e7c855522fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Bounds: {x: 90, y: 1, z: 90}
+  m_Bounds: {x: 90, y: 0.2, z: 90}
   m_Enemies:
   - m_Name: GhostEnmey
     m_EnemyGo: {fileID: 6884825251917979565, guid: cea991c1c5207cd40a63a9409eae8208,
       type: 3}
     m_TimeToNextSpawn: 1
     m_NumberToSpawn: 0
+  - m_Name: RedGhostEnmey
+    m_EnemyGo: {fileID: 6884825251917979565, guid: c28859b5646ff4114b02dec414e18beb,
+      type: 3}
+    m_TimeToNextSpawn: 10
+    m_NumberToSpawn: 10
+  - m_Name: GreenGhostEnmey
+    m_EnemyGo: {fileID: 6884825251917979565, guid: f2e62c70188f94972b3cbd058b4b8cb4,
+      type: 3}
+    m_TimeToNextSpawn: 30
+    m_NumberToSpawn: 3
 --- !u!4 &1297080110
 Transform:
   m_ObjectHideFlags: 0
@@ -687,7 +697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297080108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1007,6 +1017,36 @@ PrefabInstance:
       objectReference: {fileID: 2127200028}
     - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
         type: 3}
+      propertyPath: m_Attacks.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Name
+      value: ChargeExplore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Button
+      value: Fire3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.b
+      value: 0.16078433
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.g
+      value: 0.8572911
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
       propertyPath: m_Attacks.Array.data[0].m_offset.x
       value: 0.4
       objectReference: {fileID: 0}
@@ -1024,6 +1064,52 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Attacks.Array.data[1].m_offset.y
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Cooldown
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_offset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_AbilityGo
+      value: 
+      objectReference: {fileID: 8486783592351315732, guid: 8850174a2fb67420e8161b10001afbce,
+        type: 3}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_FrozenTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_HealthCost
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_WindUpTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252722520527162732, guid: 4aef1139232bc4f8dad80440104144c0,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_TriggerName
+      value: ShootMegaLaser
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aef1139232bc4f8dad80440104144c0, type: 3}
